@@ -5,10 +5,11 @@ from math import sqrt
 def get_value(name):
     res = input("Введите значение координаты " + name + ": ")
     while not res.isdigit():
-        res = input("Были введены некорректные данные. Введите значение координаты " + name + ": ")
+        res = input("В качестве координаты ожидалось получить положительные числа. Введите значение координаты " + name + ": ")
     return int(res)
 
 
+# Ввод значений переменных
 x = get_value("x")
 y = get_value("y")
 z = get_value("z")
